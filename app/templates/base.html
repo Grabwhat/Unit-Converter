@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/9c257c67dc.js" crossorigin="anonymous"></script>
+
+    <title>Unit Converter</title>
+</head>
+<body>
+    <div class="anchor-container">
+        <a href="{{ url_for('meters_to_centimeters', direction='meters-to-centimeters') }}">
+            Meters <i class="fa-solid fa-right-long"></i> 
+            Centimeters</a>
+            
+        <a href="{{ url_for('feet_to_inches', direction='feet-to-inches') }}">
+            Feet <i class="fa-solid fa-right-long"></i> 
+            Inches</a>
+            
+        <a href="{{ url_for('miles_to_kilometers', direction='miles-to-kilometers') }}">
+            Miles <i class="fa-solid fa-right-long"></i> 
+            Kilometers</a>
+            
+        <a href="{{ url_for('fahrenheit_to_celsius', direction='fahrenheit-to-celsius') }}">
+            Fahrenheit <i class="fa-solid fa-right-long"></i> 
+            Celsius</a>
+            
+        <a href="{{ url_for('centimeters_to_inches', direction='centimeters-to-inches') }}">
+            Centimeters <i class="fa-solid fa-right-long"></i> 
+            Inches</a>
+    </div>
+    <hr>
+    
+    <h1 id="heading">Unit Converter</h1>
+
+    <div class="parent">
+        {% block content %}{% endblock %}
+    </div>
+
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>

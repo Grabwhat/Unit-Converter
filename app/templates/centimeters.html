@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="main" data-direction="{{ direction }}">
+
+    <form action="{{ url_for('centimeters_to_inches', direction=direction) }}" method="POST" novalidate>   
+        {{ form.hidden_tag() }}
+
+        <h1 id="title">Convert 
+            <span id="unit-from">Centimeters</span> 
+            to 
+            <span id="unit-to">Inches</span>
+
+            <button type="button" id="swap-btn">Swap Units</button>
+        </h1>
+
+        <div>
+            {{ form.unit.label(class_="unit-label") }}<br>
+            {{ form.unit() }}
+
+            {% for error in form.unit.errors %}
+            <br><br><span id="error"> {{ error }} </span> 
+            {% endfor %}
+        </div>
+
+        <p> <br> {{ form.submit() }}</p>
+    </form>
+
+    {% if result is not none %}
+    <h2 id="conversion">
+        Conversion: {{ "%.2f"|format(result) }} 
+        <span id="result">{% if direction == "centimeters-to-inches" %} Inches {% else %} Centimeters {% endif %}</span>
+    </h2>
+    {% endif %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: lightcyan;
+}
+
+* {
+    font-family: "Cause", sans-serif;
+}
+
+.anchor-container{
+    padding: 10px;
+}
+
+a{
+    margin-right: 15px;
+    padding: 7px;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+
+    font-style: italic;
+    font-weight: bold;
+    background-color: lightgoldenrodyellow;
+    text-decoration: none;
+
+    transition: box-shadow 0.3s ease;
+}
+
+a:hover{
+    box-shadow: 0 0 15px 5px lightseagreen;
+    color: cadetblue;
+}
+
+.fa-right-long{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#heading{
+    font-style: italic;
+    color: darkcyan;
+    text-decoration: underline;
+}
+
+.parent{
+    width: 40vw;
+    height: 50vh;
+    
+    padding: 15px;
+
+    border: 2px solid turquoise;
+    border-radius: 15px;
+    background-color: #B2FFFF;
+}
+
+.main{
+    margin-left: 15px;
+}
+
+#title{
+    font-style: italic;
+    color: indigo;
+}
+
+#swap-btn{
+    margin-left: 10px;
+    padding: 8px;
+
+    border: 2px solid khaki;
+    border-radius: 10px;
+    background-color: lightgoldenrodyellow;
+
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+
+    transition: box-shadow 0.3s ease;
+}
+
+#swap-btn:hover{
+    box-shadow: 0 0 15px 5px khaki;
+    color: darkkhaki;
+}
+
+.unit-label{
+    color: cadetblue;
+    font-weight: bold;
+}
+
+.unit-input, .submit-btn{
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    font-style: italic;
+
+    transition: box-shadow 0.3s ease;
+}
+
+.unit-input{
+    background-color: lightgoldenrodyellow;
+}
+.unit-input:hover{
+    box-shadow: 0 0 8px 5px lemonchiffon;
+}
+
+.submit-btn{
+    text-align: center;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    box-shadow: 0 0 15px 5px lightgreen;
+    color: darkgreen;
+}
+
+#conversion{
+    margin-top: 15vh;
+
+    color: indianred;
+    text-decoration: underline;
+}
+
+#error{
+    margin-top: 10px;
+    border: 2px solid crimson;
+    border-radius: 15px;
+
+    padding: 8px;
+    color: white;
+    background-color: lightcoral;
+    transition: box-shadow 0.3s ease;
+}
+
+#error:hover{
+    box-shadow: 0 0 8px 5px indianred;
+}
