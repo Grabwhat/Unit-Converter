@@ -6,7 +6,7 @@ A simple and lightweight unit converter web application built using **HTML, CSS,
 
 ## Features
 
-- Convert between common units (length, weight, temperature, etc.)
+- Convert between common units (length, temperature, etc.)
 - Simple and responsive user interface
 - Frontend validation using JavaScript
 - Backend processing using Flask
@@ -57,6 +57,11 @@ flask run --debug
 http://127.0.0.1:5000/
 ```
 ---
+
+### Project Preview:
+
+<img width="1322" height="822" alt="image" src="https://github.com/user-attachments/assets/de8e820e-0c11-415d-bec5-5919cb60d067" />
+
 ### How It Works
 - User enters a value and selects units in the frontend.
 - JavaScript handles input validation and sends data to Flask.
